@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "0e16b8b9-a0f0-495c-be5d-e7661ddcbbed",
+		"name": "TERPEL-PERIFERIA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6281156"
+	},
+	"item": [
+		{
+			"name": "GUARDAR",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/clientes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ORDENADOS ALFABETICAMENTE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/clientes/ordenados",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"clientes",
+						"ordenados"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ORDENADOS POR EDAD",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/clientes/por-edad",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"clientes",
+						"por-edad"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PROMEDIO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/clientes/estadisticas",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"clientes",
+						"estadisticas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "JWT",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/clientes/generate-jwt?correo=julieth.ro@example.com&nombre=Daniela",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"clientes",
+						"generate-jwt"
+					],
+					"query": [
+						{
+							"key": "correo",
+							"value": "julieth.ro@example.com"
+						},
+						{
+							"key": "nombre",
+							"value": "Daniela"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EDAD",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/clientes/edad?correo=julieth.ro@example.com",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"clientes",
+						"edad"
+					],
+					"query": [
+						{
+							"key": "correo",
+							"value": "julieth.ro@example.com"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
